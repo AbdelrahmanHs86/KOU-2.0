@@ -58,6 +58,108 @@ ul {
   list-style-type: none;
 }
 
+
+/*******************Home Page ***************/
+
+#home-body{
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+}
+
+
+.home{
+  display: flex;
+  justify-content: space-around;
+height: 100vh;
+width: 70%;
+margin: auto;
+}
+
+.home-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-details .small-title {
+  background: rgba(33, 123, 244,0.1);
+  border-radius: 8px;
+  width: 177px;
+  height: 36px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+
+.home-details .small-title span{
+  color: #217BF4;
+  font-size: 14px;
+line-height:36px ;
+font-weight: 500;
+ 
+}
+
+.home-details h1{
+
+color: #0A093D;
+font-weight: 700;
+font-size: 55px;
+margin: 15px 0;
+}
+
+.home-details p {
+  color: #656464;
+  line-height: 28px;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.home-details-buttons{
+  display: flex;
+}
+
+.home-details .btn-home{
+  width: 162px;
+  height: 62px;
+  border-radius: 14px;
+  padding: 20px 20px;
+  background-color: #217BF4;
+  border: none;
+  margin: 15px 10px 15px 0;
+}
+
+.home-details .btn-home a{
+  color: white; 
+}
+.home-details .btn-home-outline{
+  width: 162px;
+  height: 62px;
+  border-radius: 14px;
+  padding: 20px 20px;
+  background-color: transparent;
+  border: 1px solid rgba(33, 123, 244,0.1);
+  margin: 15px 10px 15px 0;
+}
+
+.home-details .btn-home-outline a{
+  color: #217BF4;
+  
+}
+
+
+.home-image{
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.home-image img{
+  width: 100%;
+}
+
+
+
+
 /************************ Giris Kayit Parola *****/
 
 .form-template {
