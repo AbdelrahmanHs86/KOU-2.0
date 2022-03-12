@@ -789,6 +789,7 @@ grid-template-areas:
 
   justify-items: start;
   align-items: center;
+  padding-left: 30px;
   column-gap: 15px;
   row-gap: 12px;
 }
@@ -796,6 +797,7 @@ grid-template-areas:
 
 .profil-details{
   grid-area: d;
+  /* justify-self: center; */
   display: flex;
   flex-direction: column;
 }
@@ -944,14 +946,14 @@ row-gap: 12px;
 .dgs .bas-form{
   grid-template-areas: 
 
-'f1 f1 f1 . f3 f3 f3 f3 . . . l'
-'f1 f1 f1 . f3 f3 f3 f3 . . . l '
-'f1 f1 f1 . f3 f3 f3 f3 . . . l'
+'f1 f1 f1 . f3 f3 f3 f3 . . l '
+'f1 f1 f1 . f3 f3 f3 f3 . . l  '
+'f1 f1 f1 . f3 f3 f3 f3 . . l '
 /* '.  .  .  .  .  .  .  .  . . . l' */
-'f2 f2 f2 . fp fp fp fp . . . l '
-'f2 f2 f2 . fp fp fp fp . . . l '
-'f2 f2 f2 . fp fp fp fp . b b l '
-'.  .  .  .  .  .  .  .  . b b l';
+'f2 f2 f2 . fp fp fp fp . . l  '
+'f2 f2 f2 . fp fp fp fp . . l  '
+'f2 f2 f2 . fp fp fp fp . b l  '
+'.  .  .  .  .  .  .  .  . b l ';
 }
 
 
@@ -1005,6 +1007,7 @@ grid-area: f3;
 .form-upload{
   grid-area: fp;
   /* padding-left: 50px; */
+  display: block;
 }
 
 .upload-details{
@@ -1058,6 +1061,7 @@ cursor: pointer;
 
 .bas-indicators{
   grid-area: l;
+  justify-self: start;
 }
 
 .bas-indicators .long-line1{
@@ -1108,8 +1112,8 @@ cursor: pointer;
 'f1 f1 f1 . fp fp fp fp . . . l'
 '.  .  .  .  .  .  .  .  . . . l'
 'f2 f2 f2 . . . . . . . . l '
-'f2 f2 f2 . . . . . . . . l '
-'f2 f2 f2 . . . . . . b b l ';
+'f2 f2 f2 . . . . . . . . l'
+'f2 f2 f2 . . . . . . b b l';
 /* '.  .  .  .  .  .  .  .  . b b l'; */
 }
 
