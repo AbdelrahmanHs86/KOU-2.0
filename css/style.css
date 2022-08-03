@@ -124,7 +124,8 @@ ul {
 
 .home-details .btn-home {
   /* width: 162px; */
-  height: 62px;
+  text-align: center;
+  /* height: 62px; */
   border-radius: 14px;
   background-color: #217BF4;
   border: none;
@@ -133,8 +134,10 @@ ul {
 }
 
 .home-details .btn-home a {
+  display: block;
   color: white;
-  padding: 22px 50px;
+  padding: 20px 40px;
+  width: 145px;
 }
 
 .home-details .btn-home:hover {
@@ -158,7 +161,9 @@ ul {
 
 .home-details .btn-home-outline a {
   color: #217BF4;
-  padding: 22px 50px;
+  padding: 20px 40px;
+  width: 145px;
+  display: block;
 }
 
 .home-details .btn-home-outline:hover {
@@ -181,6 +186,12 @@ ul {
   width: 100%;
 }
 
+
+@media screen and (max-width:972px) {
+  .home-image {
+    display: none;
+  }
+}
 
 
 
@@ -406,11 +417,10 @@ select {
 /***************  Side Bar *********************/
 
 .sidebar {
-  width: 220px;
-  height: 125vh;
+  flex: 20%;
+  max-width: 220px;
   background-color: #2C2D30;
   padding: 20px 10px;
-  float: left;
 }
 
 .sidebar-logo {
@@ -422,7 +432,7 @@ select {
 }
 
 .menu {
-  margin-top: 80px;
+  margin-top: 62px;
   display: grid;
   grid-template-columns: max-content;
   grid-auto-rows: auto;
@@ -454,7 +464,7 @@ select {
 
 main {
   display: flex;
-  /* height: 600px; */
+  height: 100vh;
 }
 
 .anaEkran {
@@ -493,9 +503,7 @@ main {
 .section-line {
   grid-area: line;
   width: 300px;
-  border: 1px dashed #FFFFFF;
-  /* margin-left: 0px;
-margin-right: 10px; */
+  border-top: 2px dashed #FFFFFF;
 }
 
 .btn-success {
@@ -687,7 +695,7 @@ margin-right: 10px; */
 
 .svg-l {
   grid-area: l;
-  width: 250px;
+  width: 198px;
   position: relative;
   right: 20px;
 }
@@ -728,17 +736,14 @@ margin-right: 10px; */
   }
 
   .section-line {
-    grid-area: line;
     width: 100px;
-    border: 1px dashed #FFFFFF;
   }
 
   .sidebar {
-    width: 15%;
-    height: 125vh;
+    flex: 15%;
+    height: 100vh;
     background-color: #2C2D30;
     padding: 20px 5px;
-    float: left;
   }
 
   .sidebar span {
@@ -804,27 +809,29 @@ margin-right: 10px; */
 /****************************** Profil ******************************/
 
 .profilEkran {
+  flex: 80%;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-top: 24px;
   background-color: var(--black);
   position: relative;
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: 55px;
-  /* grid-auto-rows: auto; */
+  /* grid-auto-rows: 55px; */
+  grid-auto-rows: auto;
   grid-template-areas:
-    '. . . . . . . . . . . .'
     'title title title title . . . . . . . .'
-    'line line line baş baş gon gon gon . . . .  '
+    'line line line baş baş gon gon gon . . . . '
     '. . . . . . . . . . . . '
     'd d d d . . . . . l l .'
     'd d d d . . . . . l l .'
-    'd d d d . . . . . . . .'
-    'd d d d . . . . s . . .'
-    '. . . . .      . . . s . m m ';
+    'd d d d . . s s . . m m'
+    'd d d d . . s s . . m m';
 
 
   justify-items: start;
-  align-items: center;
-  padding-left: 30px;
+  align-items: start;
   column-gap: 15px;
   row-gap: 12px;
 }
@@ -832,14 +839,14 @@ margin-right: 10px; */
 
 .profil-details {
   grid-area: d;
-  /* justify-self: center; */
+  justify-self: start;
   display: flex;
   flex-direction: column;
 }
 
 .profil-data {
-  width: 320px;
-  height: 50px;
+  width: 345px;
+  min-height: 54px;
   background-color: var(--gray-8);
   display: flex;
   align-items: center;
@@ -848,14 +855,14 @@ margin-right: 10px; */
 }
 
 .data-icon i {
-  width: 50px;
-  height: 50px;
+  width: 54px;
+  height: 54px;
   background-color: var(--gray-8);
   border-radius: 15px;
-  margin-right: 10px;
+  margin-right: 12px;
   font-size: 16px;
   text-align: center;
-  line-height: 50px;
+  line-height: 54px;
   color: white;
 }
 
@@ -872,14 +879,15 @@ margin-right: 10px; */
 }
 
 .s2 {
-  width: 250px;
+  width: 14rem;
   right: 25px;
-  top: 15px;
+  /* align-self: end; */
 }
 
 .m2 {
   left: 42.5px;
-  top: 61px;
+  top: 1px;
+  align-self: end;
   width: 225px;
 }
 
@@ -892,13 +900,13 @@ margin-right: 10px; */
 @media screen and (max-width : 1024px) {
 
   .profilEkran {
+
+    padding: 10px;
     background-color: var(--black);
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 1fr;
     grid-template-areas:
-      '. . . .'
       '. title title .'
       '. line line .'
       'd d d d '
@@ -912,7 +920,10 @@ margin-right: 10px; */
     align-items: center;
     column-gap: 15px;
     row-gap: 7px;
-    width: 85%;
+    flex: 85%;
+    justify-items: center;
+    align-items: start;
+
   }
 
   .profilEkran img {
@@ -920,12 +931,33 @@ margin-right: 10px; */
   }
 
   .profil-details {
+    width: 100%;
     grid-area: d;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-self: center;
   }
+
+  .profil-data {
+    width: 85%;
+  }
+
+
+
+}
+
+@media screen and (max-width : 480px) {
+  .data-info {
+    text-align: center;
+    margin: auto;
+    padding: 12px 5px;
+  }
+
+  .data-icon {
+    display: none;
+  }
+
+
 }
 
 /******************** DGS *****************/
