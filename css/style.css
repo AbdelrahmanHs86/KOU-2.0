@@ -906,6 +906,7 @@ main {
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: max-content;
     grid-template-areas:
       '. title title .'
       '. line line .'
@@ -919,7 +920,7 @@ main {
     justify-items: center;
     align-items: center;
     column-gap: 15px;
-    row-gap: 7px;
+    row-gap: 25px;
     flex: 85%;
     justify-items: center;
     align-items: start;
