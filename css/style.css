@@ -486,11 +486,14 @@ main {
 }
 
 .anaEkran {
+  flex: 80%;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(10, 55px);
   grid-template-areas:
-    '. . . . . . . . . . . .'
     'title title title title . . . . . . . .'
     'line line line baş baş gon gon gon . . . .  '
     '. . . . . . . . . . . . '
@@ -557,6 +560,36 @@ main {
 .btn-gon {
   grid-area: gon;
 }
+
+@media screen and (max-width : 1500px) {
+  .anaEkran {
+
+    grid-template-areas:
+      'title title title title . . . . .   '
+      'line line line baş baş gon gon gon .     '
+      '. . . . . . . . .  '
+      'cr cr cr cr cr . . s s '
+      'cr cr cr cr cr . . . . '
+      'cr cr cr cr cr . l l l   '
+      'cr cr cr cr cr m l l l '
+      '. . . . .      m l l l   '
+      '. . . . . . . . .  ';
+
+  }
+
+  .btn-baş {
+    min-width: 180px;
+    max-width: 200px;
+    text-align: center;
+  }
+
+
+  .section-line {
+    width: 85%;
+  }
+
+}
+
 
 /****************** Card *********************/
 .bas-cards,
@@ -718,6 +751,7 @@ main {
   right: 20px;
 }
 
+
 @media screen and (max-width : 1024px) {
 
 
@@ -836,7 +870,6 @@ main {
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  /* grid-auto-rows: 55px; */
   grid-auto-rows: auto;
   grid-template-areas:
     'title title title title . . . . . . . .'
