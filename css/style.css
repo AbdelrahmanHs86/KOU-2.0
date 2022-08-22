@@ -369,6 +369,8 @@ select {
 .btn-blue {
   width: 80%;
   height: 40px;
+  text-align:center;
+  line-height:40px;
   background-color: blue;
   outline: none;
   border: none;
@@ -378,6 +380,7 @@ select {
 }
 .btn-blue a{
   color:white;
+  width: 80%;
 }
 .btn:hover {
   opacity: 0.85;
