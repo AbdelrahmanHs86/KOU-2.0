@@ -366,6 +366,11 @@ select {
   color: #c7cfd680;
 }
 
+.btn-link{
+  width: 80%;
+  text-align: center;
+}
+
 .btn-blue {
   width: 80%;
   height: 40px;
@@ -376,9 +381,7 @@ select {
   color: white;
   transition: opacity 0.3s;
 }
-.btn-blue a{
-  color:white;
-}
+
 .btn:hover {
   opacity: 0.85;
 }
