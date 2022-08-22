@@ -376,7 +376,9 @@ select {
   color: white;
   transition: opacity 0.3s;
 }
-
+.btn-blue a{
+  color:white;
+}
 .btn:hover {
   opacity: 0.85;
 }
